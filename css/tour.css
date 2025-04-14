@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  #panolens-container {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/restaurant_cover.jpg') center/cover no-repeat;
+    color: white;
+  }
+  
+  .btn-tour {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: rgba(175, 71, 71, 0.6);
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  .portada {
+    background: url('../img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  
