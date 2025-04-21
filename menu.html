@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+            <!-- Encabezado -->
+            <header>
+                <h1>Restaurante Cenfotec</h1>
+            </header>
+        
+            <!-- Menú de navegación -->
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="/pdf/about.pdf" target="_blank" rel="noopener noreferrer">About us</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><input type="text" placeholder="Search"></li>
+                </ul>
+            </nav>
+
+    <h1>Menú - Ristorante Italiano</h1>
+  
+    <div class="menu" id="pagina1">
+      <div class="categoria">
+        <h2>Entradas</h2>
+        <ul>
+          <li>Bruschetta - $5</li>
+          <li>Caprese - $6</li>
+          <li>Antipasto - $7</li>
+        </ul>
+      </div>
+  
+      <div class="categoria">
+        <h2>Pastas</h2>
+        <ul>
+          <li>Spaghetti Carbonara - $12</li>
+          <li>Fettuccine Alfredo - $13</li>
+          <li>Lasagna Bolognese - $14</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="menu" id="pagina2" style="display: none;">
+      <div class="categoria">
+        <h2>Pizzas</h2>
+        <ul>
+          <li>Margherita - $10</li>
+          <li>Quattro Stagioni - $11</li>
+          <li>Prosciutto e Funghi - $12</li>
+        </ul>
+      </div>
+  
+      <div class="categoria">
+        <h2>Postres</h2>
+        <ul>
+          <li>Tiramisú - $6</li>
+          <li>Panna Cotta - $5</li>
+          <li>Cannoli - $4</li>
+        </ul>
+      </div>
+    </div>
+  
+    <button onclick="cambiarPagina()">Cambiar Página</button>
+  
+    <script>
+      let paginaActual = 1;
+  
+      function cambiarPagina() {
+        const p1 = document.getElementById('pagina1');
+        const p2 = document.getElementById('pagina2');
+  
+        if (paginaActual === 1) {
+          p1.style.display = 'none';
+          p2.style.display = 'block';
+          paginaActual = 2;
+        } else {
+          p1.style.display = 'block';
+          p2.style.display = 'none';
+          paginaActual = 1;
+        }
+      }
+    </script>
+            <!-- Pie de página -->
+            <footer>
+              <section id="lealtad">
+                  <h2>Únete al Club de Lealtad Cenfotec</h2>
+                  <p>Recibe promociones exclusivas y novedades directamente en tu correo.</p>
+                  <form id="lealtadForm">
+                      <input type="email" name="subscriber_email" placeholder="Tu correo electrónico" required>
+                      <button type="submit">Unirse</button>
+                  </form>
+                  <p id="lealtadMsg"></p>
+              </section>
+          
+              <p>&copy; 2025 Restaurante Cenfotec | Todos los derechos reservados.</p>
+          </footer>
+  </body>
+  </html>

@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
+    <title>Contacto</title>
     <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" href="css/index.css">
-</head>
+    <link rel="stylesheet" href="css/contacto.css">
+    
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+    <!-- Tu script externo -->
+    <script src="js/contacto.js" defer></script>
+    <script src="js/lealtad.js" defer></script> <!-- Solo si estás usando un script separado -->
+</head>
 <body>
     <!-- Encabezado -->
     <header>
@@ -26,25 +32,27 @@
         </ul>
     </nav>
 
-    <!-- Contenido principal -->
+    <!-- Formulario de contacto -->
     <main>
-        <!-- Sección de contenido principal -->
-        <section>
-            <h2>Bienvenidos a nuestro Restaurante</h2>
-            <p>Disfruta de la mejor comida en un ambiente único.</p>
-        </section>
-
-        <!-- Sección 1 -->
-        <section>
-            <h3>Promociones</h3>
-            <p>Descubre nuestras ofertas especiales para este mes.</p>
-        </section>
-
-        <!-- Sección 2 -->
-        <section>
-            <h3>Menú del día</h3>
-            <p>Ven y prueba nuestros platos más populares.</p>
-        </section>
+        <h1>Contacto</h1>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+        
+            <label for="apellidos">Apellido:</label>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+        
+            <label for="correo">Email:</label>
+            <input type="email" id="correo" name="correo" required><br><br>
+        
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required><br><br>
+        
+            <label for="comentarios">Mensaje:</label>
+            <textarea id="comentarios" name="comentarios" required></textarea><br><br>
+        
+            <button type="submit">Enviar</button>
+        </form>
     </main>
 
     <!-- Pie de página -->

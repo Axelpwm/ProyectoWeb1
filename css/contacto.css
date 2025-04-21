@@ -1,13 +1,17 @@
+/* ===== General ===== */
 body {
     background-image: url('../img/fondo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+    display: flex;
+    flex-direction: column;
 }
 
-/* Encabezado */
+h1 {
+    color: aliceblue;
+}
 header {
     background-color: #333;
     color: white;
@@ -26,7 +30,6 @@ nav {
     background-color: #444;
     padding: 10px 0;
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -34,39 +37,76 @@ nav ul {
     display: flex;
     justify-content: center;
 }
-
 nav ul li {
     margin: 0 15px;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
-
 nav ul li a:hover {
     color: #f4f4f4;
 }
 
-/* Contenido */
+/* ===== Main Contact Form ===== */
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin: 0;
     padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    box-sizing: border-box;
 }
-
-/* Secciones */
 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     margin: 20px 0;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+#contactForm label,
+#contactForm input,
+#contactForm textarea,
+#contactForm button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form input, 
+form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #333;
+}
 
-/* Pie de página */
 
+/* ==== Club de Lealtad (Compact Layout) ==== */
 #lealtad {
     background-color: #f9f9f9;
     padding: 40px 20px;
@@ -76,13 +116,13 @@ section {
 }
 
 #lealtad h2 {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 10px;
     color: #333;
 }
 
 #lealtad p {
-    font-size: 16px;
+    font-size: 15px;
     color: #555;
     margin-bottom: 20px;
 }
@@ -97,11 +137,11 @@ section {
 }
 
 #lealtad input[type="email"] {
+    flex: 1;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    min-width: 250px;
 }
 
 #lealtad button {
@@ -112,6 +152,7 @@ section {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    white-space: nowrap;
     transition: background-color 0.3s;
 }
 
@@ -124,3 +165,4 @@ section {
     font-weight: bold;
     color: #2e7d32;
 }
+
