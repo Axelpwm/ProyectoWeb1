@@ -26,11 +26,18 @@
     <ul>
       <li><a href="inicio.html">Inicio</a></li>
       <li><a href="menu.html">Menú</a></li>
-      <li><a href="/pdf/about.pdf" target="_blank" rel="noopener noreferrer">About us</a></li>
+      <li><a href="/pdf/about.pdf" target="_blank" rel="noopener noreferrer">Nosotros</a></li>
       <li><a href="contacto.html">Contacto</a></li>
       <li><a href="landing.html">Landing</a></li>
-      <li><input type="text" placeholder="Search" /></li>
-    </ul>
+      <li>
+        <select id="selector-navegacion">
+          <option value="">Conoce más</option>
+          <option value="galeria.html">Galería</option>
+          <option value="tour.html">App Web 360</option>
+        </select>
+      </li>
+      <li><input type="text" placeholder="Search"></li>
+  </ul>
   </nav>
 
   <!-- Contenido principal del tour -->
@@ -48,5 +55,13 @@
 
     <p>&copy; 2025 Restaurante Cenfotec | Todos los derechos reservados.</p>
   </footer>
+  <script>
+    const selector = document.getElementById('selector-navegacion');
+    selector.addEventListener('change', function () {
+      if (this.value) {
+        window.location.href = this.value;
+      }
+    });
+  </script>
 </body>
 </html>

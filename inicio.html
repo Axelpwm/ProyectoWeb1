@@ -24,13 +24,20 @@
             <li><a href="/pdf/about.pdf" target="_blank" rel="noopener noreferrer">Nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="landing.html">Landing</a></li>
+            <li>
+              <select id="selector-navegacion">
+                <option value="">Conoce más</option>
+                <option value="galeria.html">Galería</option>
+                <option value="tour.html">App Web 360</option>
+              </select>
+            </li>
             <li><input type="text" placeholder="Search"></li>
         </ul>
     </nav>
 
     <!-- Contenido principal -->
     <main>
-        <main>
+        
             <!-- Sección de contenido principal -->
             <section>
               <h2>Bienvenidos a nuestro Restaurante</h2>
@@ -60,7 +67,31 @@
                 </ul>
               </div>
             </section>
-          </main>
+            <section>
+              <h3 onclick="toggleDropdown('reserva')">
+                Reservar una mesa 
+                <span id="reserva-arrow" class="arrow">▼</span>
+              </h3>
+              <div id="reserva" class="dropdown-content">
+                <form action="/reservar" method="POST" style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+                  <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required style="padding: 10px; width: 100%; max-width: 400px; border-radius: 6px; border: 1px solid #ccc;">
+                  
+                  <input type="email" id="email" name="email" placeholder="Correo electrónico" required style="padding: 10px; width: 100%; max-width: 400px; border-radius: 6px; border: 1px solid #ccc;">
+            
+                  <input type="date" id="fecha" name="fecha" required style="padding: 10px; width: 100%; max-width: 400px; border-radius: 6px; border: 1px solid #ccc;">
+            
+                  <input type="time" id="hora" name="hora" required style="padding: 10px; width: 100%; max-width: 400px; border-radius: 6px; border: 1px solid #ccc;">
+            
+                  <input type="number" id="personas" name="personas" min="1" max="20" placeholder="Número de personas" required style="padding: 10px; width: 100%; max-width: 400px; border-radius: 6px; border: 1px solid #ccc;">
+            
+                  <a href="inicio.html" target="_blank" 
+                  style="display: inline-block; text-align: center; padding: 12px 24px; font-size: 16px; font-weight: bold; background: linear-gradient(135deg, #a52a2a, #d94f4f); color: white; border: none; border-radius: 8px; cursor: pointer; text-decoration: none;">
+                 Reservar
+                  </a>
+                </form>
+              </div>
+            </section>
+         
           
     </main>
 
@@ -85,5 +116,13 @@
 
         <p>&copy; 2025 Restaurante Cenfotec | Todos los derechos reservados.</p>
     </footer>
+    <script>
+      const selector = document.getElementById('selector-navegacion');
+      selector.addEventListener('change', function () {
+        if (this.value) {
+          window.location.href = this.value;
+        }
+      });
+    </script>
 </body>
 </html>

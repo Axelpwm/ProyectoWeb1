@@ -51,6 +51,21 @@ body {
     border-radius: 4px;
     border: none;
   }
+  nav select {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-family: inherit;
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+  }
+  
+  nav select:hover {
+    background-color: #eee;
+  }
+  
   
   /* ===== Menú de Comida ===== */
   h1 {

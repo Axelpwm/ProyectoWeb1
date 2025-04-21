@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Galería</title>
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/galeria.css" />
+  <script src="js/galeria.js" defer></script>
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Restaurante Cenfotec</h1>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="/pdf/about.pdf" target="_blank" rel="noopener noreferrer">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="landing.html">Landing</a></li>
+        <li>
+          <select id="selector-navegacion">
+            <option value="">Conoce más</option>
+            <option value="galeria.html">Galería</option>
+            <option value="tour.html">App Web 360</option>
+          </select>
+        </li>
+        <li><input type="text" placeholder="Search"></li>
+    </ul>
+  </nav>
+
+  <!-- Galería principal -->
+  <main>
+    <section id="galeria">
+      <h2>Galería Fotográfica</h2>
+      <input type="text" id="buscador" placeholder="Buscar imágenes...">
+      <div class="contenedor-imagenes" id="contenedor-imagenes"></div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <section id="lealtad">
+        <h2>Únete al Club de Lealtad Cenfotec</h2>
+        <p>Recibe promociones exclusivas y novedades directamente en tu correo.</p>
+        <form id="lealtadForm">
+            <input type="email" name="subscriber_email" placeholder="Tu correo electrónico" required>
+            <button type="submit">Unirse</button>
+        </form>
+        <p id="lealtadMsg"></p>
+    </section>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+      <a href="https://whatsapp.com" target="_blank"><img src="img/whatsapp.png" alt="Twitter"></a>
+    </div>
+    
+    
+
+    <p>&copy; 2025 Restaurante Cenfotec | Todos los derechos reservados.</p>
+</footer>
+<script>
+    const selector = document.getElementById('selector-navegacion');
+    selector.addEventListener('change', function () {
+      if (this.value) {
+        window.location.href = this.value;
+      }
+    });
+  </script>
+</body>
+</html>

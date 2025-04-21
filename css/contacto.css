@@ -50,6 +50,21 @@ nav ul li a {
 nav ul li a:hover {
     color: #f4f4f4;
 }
+nav select {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-family: inherit;
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+  }
+  
+  nav select:hover {
+    background-color: #eee;
+  }
+  
 
 /* ===== Main Contact Form ===== */
 main {
@@ -186,3 +201,22 @@ form button:hover {
     filter: brightness(1.1);
     -webkit-filter: brightness(1.1);
 }
+.mapa {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .mapa h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #a52a2a;
+  }
+  
+  .mapa iframe {
+    width: 90%;
+    max-width: 800px;
+    height: 350px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  }
+  

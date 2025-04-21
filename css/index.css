@@ -51,6 +51,21 @@ nav ul li a {
 nav ul li a:hover {
     color: #f4f4f4;
 }
+nav select {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-family: inherit;
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+  }
+  
+  nav select:hover {
+    background-color: #eee;
+  }
+  
 
 /* Contenido */
 main {
