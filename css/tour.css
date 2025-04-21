@@ -94,7 +94,7 @@ body, html {
   }
   #panorama-container {
     width: 100%;
-    height: 100vh; /* No ocupamos todo el alto para dejar espacio al header/footer */
+    height: 100vh; 
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }

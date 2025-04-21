@@ -1,4 +1,4 @@
-emailjs.init('6x-QiNg3ZzpqcxNy_'); // Replace with your actual EmailJS public key
+emailjs.init('6x-QiNg3ZzpqcxNy_'); 
 
 document.addEventListener('DOMContentLoaded', function () {
   const lealtadForm = document.getElementById('lealtadForm');

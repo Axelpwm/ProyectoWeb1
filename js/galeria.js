@@ -1,4 +1,4 @@
-// js/galeria.js
+
 document.addEventListener('DOMContentLoaded', () => {
     const imagenes = [
       { src: 'img/pizza.png', alt: 'Pizza Margherita' },
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { src: 'img/ensalada.png', alt: 'Ensalada César' },
       { src: 'img/tiramisu.png', alt: 'Tiramisú' },
       { src: 'img/lasana.png', alt: 'Lasagna Clásica' },
-      // Agregá aquí más imágenes si querés
+
     ];
   
     const contenedor = document.getElementById('contenedor-imagenes');
@@ -32,6 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
       mostrarImagenes(buscador.value);
     });
   
-    mostrarImagenes(); // Cargar todo al inicio
+    mostrarImagenes();
   });
   

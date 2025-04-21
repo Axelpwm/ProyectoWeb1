@@ -3,9 +3,9 @@ emailjs.init('6x-QiNg3ZzpqcxNy_');
     const form = document.getElementById('contactForm');
 
     form.addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent normal form submit
+      event.preventDefault(); 
 
-      // Show loading feedback (optional)
+
       const button = form.querySelector('button');
       const originalText = button.textContent;
       button.disabled = true;

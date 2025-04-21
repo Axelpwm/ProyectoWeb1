@@ -24,7 +24,7 @@ const crearHotspot = (x, y, z, contenido) => {
   panorama.add(infospot);
 };
 
-// Zona interactiva
+
 const zonas = [
   
   {
@@ -86,10 +86,10 @@ const zonas = [
     `
   },
   
-  //Archivos con imagenes
+ 
   { x: 50, y: -150, z: -400, texto: "Pasta", html: "<h3>La pasta Alfredo es un plato cremoso de origen italiano-americano, preparado con fettuccine y una salsa a base de mantequilla, crema y queso parmesano. Es suave, rica y perfecta para acompañar con pollo o camarones.</h3><img src='img/pasta.png' width='200' alt='deco'>" },
   
-  // Archivos de audio
+
   { x: -980, y: -20, z: -100, texto: "Lasagna", html: "<img src='img/lasana.png' width='200' alt='deco'>" }
 ];
 

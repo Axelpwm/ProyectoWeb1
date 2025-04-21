@@ -9,7 +9,7 @@ body {
     color: #0f0f0f;
 }
 
-/* Encabezado */
+
 header {
     background-color: #333;
     color: #ffebcd;
@@ -24,7 +24,7 @@ footer {
     padding: 30px 20px;
 }
 
-/* Menú de navegación */
+
 nav {
     background-color: #444;
     padding: 10px 0;
@@ -67,14 +67,14 @@ nav select {
   }
   
 
-/* Contenido */
+
 main {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Secciones */
+
 section {
     background-color: white;
     margin: 20px 0;
@@ -83,7 +83,7 @@ section {
     text-align: center;
 }
 
-/* Pie de página */
+
 
 #lealtad {
     background-color: #f9f9f9;

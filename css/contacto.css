@@ -1,4 +1,4 @@
-/* ===== General ===== */
+
 body {
     background-image: url('../img/fondo.png');
     background-size: cover;
@@ -27,7 +27,7 @@ footer {
     padding: 30px 20px;
 }
 
-/* Menú de navegación */
+
 nav {
     background-color: #444;
     padding: 10px 0;
@@ -66,7 +66,7 @@ nav select {
   }
   
 
-/* ===== Main Contact Form ===== */
+
 main {
     display: flex;
     flex-direction: column;
@@ -123,7 +123,7 @@ form button:hover {
 }
 
 
-/* ==== Club de Lealtad (Compact Layout) ==== */
+
 #lealtad {
     background-color: #f9f9f9;
     padding: 40px 20px;
