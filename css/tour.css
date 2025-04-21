@@ -1,0 +1,102 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    text-align: center;
+  }
+  
+  .contenedor-portada h1 {
+    font-size: 3rem;
+  }
+  
+  .btn-empezar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #4e54c8;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-empezar:hover {
+    background-color: #ddd;
+  }
+  
+  #panorama-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+  }
+  
+  .tooltip {
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    max-width: 300px;
+    font-size: 0.95rem;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+  }
+  .tooltip h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    color: #ffcc00;
+  }
+  .tooltip img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .tooltip audio {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .video-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  #panorama-container {
+    width: 100%;
+    height: 100vh; /* No ocupamos todo el alto para dejar espacio al header/footer */
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
