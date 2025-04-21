@@ -7,11 +7,11 @@ body {
     background-attachment: fixed;
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    color: #fff;
+    color: #030303;
 }
 
 h1 {
-    color: aliceblue;
+    color: #ffebcd;
 }
 header {
     background-color: #333;
@@ -20,8 +20,9 @@ header {
     text-align: center;
 }
 footer {
+    position: relative;
     background-color: #333;
-    color: white;
+    color: #ffebcd;
     text-align: center;
     padding: 30px 20px;
 }
@@ -119,7 +120,7 @@ form button:hover {
 #lealtad h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color: #a52a2a;
 }
 
 #lealtad p {
@@ -166,4 +167,22 @@ form button:hover {
     font-weight: bold;
     color: #2e7d32;
 }
-
+.social-links {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  .social-links img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-links img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}

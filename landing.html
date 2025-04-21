@@ -1,45 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
-    <link rel="icon" href="img/favicon.png">.
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Landing - Restaurante Cenfotec</title>
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/lealtad.css" />
 </head>
 
 <body>
-    <header>
-        <!-- Header content like navigation, logo, etc. -->
-    </header>
+  <!-- Header -->
+  <header>
+    <h1>Restaurante Cenfotec</h1>
+  </header>
 
-    <main>
-        <section>
-        <p>Cenfotec</p>
-        <br><br>
-        <p>Proyectos</p>
+  <!-- Contenido principal -->
+  <main class="landing">
+    <section class="landing-content">
+        <h2 class="landing-title">Proyecto Web 1</h2>
+      <p>Explora nuestros proyectos destacados:</p>
+
+      <div class="landing-buttons">
         <a href="inicio.html">
-            <button type="button">Sitio Web</button>
+          <button type="button">Sitio Web</button>
         </a>
         <a href="tour.html">
-            <button type="button">App Web</button>
-           </a>
-        </section>
-    </main>
+          <button type="button">App Web</button>
+        </a>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <section id="lealtad">
-            <h2>Únete al Club de Lealtad Cenfotec</h2>
-            <p>Recibe promociones exclusivas y novedades directamente en tu correo.</p>
-            <form id="lealtadForm">
-                <input type="email" name="subscriber_email" placeholder="Tu correo electrónico" required>
-                <button type="submit">Unirse</button>
-            </form>
-            <p id="lealtadMsg"></p>
-        </section>
+  <!-- Footer -->
+  <footer>
+    <section id="lealtad">
+      <h2>Únete al Club de Lealtad Cenfotec</h2>
+      <p>Recibe promociones exclusivas y novedades directamente en tu correo.</p>
+      <form id="lealtadForm">
+        <input type="email" name="subscriber_email" placeholder="Tu correo electrónico" required />
+        <button type="submit">Unirse</button>
+      </form>
+      <p id="lealtadMsg"></p>
+    </section>
+    <div class="social-links">
+        <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+        <a href="https://whatsapp.com" target="_blank"><img src="img/whatsapp.png" alt="Twitter"></a>
+      </div>
 
-        <p>&copy; 2025 Restaurante Cenfotec | Todos los derechos reservados.</p>
-    </footer>
+    <p>&copy; 2025 Restaurante Cenfotec | Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>

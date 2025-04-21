@@ -7,6 +7,7 @@
     <title>Index</title>
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/inicio.js" defer></script>
 </head>
 
 <body>
@@ -29,23 +30,38 @@
 
     <!-- Contenido principal -->
     <main>
-        <!-- Sección de contenido principal -->
-        <section>
-            <h2>Bienvenidos a nuestro Restaurante</h2>
-            <p>Disfruta de la mejor comida en un ambiente único.</p>
-        </section>
-
-        <!-- Sección 1 -->
-        <section>
-            <h3>Promociones</h3>
-            <p>Descubre nuestras ofertas especiales para este mes.</p>
-        </section>
-
-        <!-- Sección 2 -->
-        <section>
-            <h3>Menú del día</h3>
-            <p>Ven y prueba nuestros platos más populares.</p>
-        </section>
+        <main>
+            <!-- Sección de contenido principal -->
+            <section>
+              <h2>Bienvenidos a nuestro Restaurante</h2>
+              <p>Disfruta de la mejor comida en un ambiente único.</p>
+            </section>
+          
+            <!-- Sección 1: Promociones con dropdown -->
+            <section>
+              <h3 onclick="toggleDropdown('promo')">Promociones <span class="arrow">▼</span></h3>
+              <div id="promo" class="dropdown-content">
+                <ul>
+                  <li>2x1 en pizzas los miércoles</li>
+                  <li>Bebida gratis con tu lasaña</li>
+                  <li>15% en menú vegetariano</li>
+                </ul>
+              </div>
+            </section>
+          
+            <!-- Sección 2: Menú del día con dropdown doble -->
+            <section>
+              <h3 onclick="toggleDropdown('menu-dia')">Menú del día <span class="arrow">▼</span></h3>
+              <div id="menu-dia" class="dropdown-content">
+                <ul>
+                  <li>Entrada: Sopa minestrone</li>
+                  <li>Principal: Pollo al limón con risotto</li>
+                  <li>Postre: Tiramisú</li>
+                </ul>
+              </div>
+            </section>
+          </main>
+          
     </main>
 
     <!-- Pie de página -->
@@ -59,6 +75,13 @@
             </form>
             <p id="lealtadMsg"></p>
         </section>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+          <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+          <a href="https://whatsapp.com" target="_blank"><img src="img/whatsapp.png" alt="Twitter"></a>
+        </div>
+        
+        
 
         <p>&copy; 2025 Restaurante Cenfotec | Todos los derechos reservados.</p>
     </footer>
