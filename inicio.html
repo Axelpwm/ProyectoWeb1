@@ -8,6 +8,7 @@
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/inicio.js" defer></script>
+    <script src="js/carrusel.js" defer></script>
 </head>
 
 <body>
@@ -43,7 +44,32 @@
               <h2>Bienvenidos a nuestro Restaurante</h2>
               <p>Disfruta de la mejor comida en un ambiente único.</p>
             </section>
-          
+          <!-- Carrusel de Imágenes -->
+<section class="carousel">
+  <div class="carousel-container">
+    <div class="carousel-slide fade">
+      <img src="img/lasana.png" alt="Lasagna">
+    </div>
+    <div class="carousel-slide fade">
+      <img src="img/vino.png" alt="Vino">
+    </div>
+    <div class="carousel-slide fade">
+      <img src="img/tiramisu.png" alt="Tiramisú">
+    </div>
+
+    <!-- Botones de navegación -->
+    <a class="prev" onclick="cambiarSlide(-1)">&#10094;</a>
+    <a class="next" onclick="cambiarSlide(1)">&#10095;</a>
+  </div>
+
+  <!-- Indicadores -->
+  <div class="carousel-dots">
+    <span class="dot" onclick="irASlide(1)"></span>
+    <span class="dot" onclick="irASlide(2)"></span>
+    <span class="dot" onclick="irASlide(3)"></span>
+  </div>
+</section>
+
 
             <section>
               <h3 onclick="toggleDropdown('promo')">Promociones <span class="arrow">▼</span></h3>
